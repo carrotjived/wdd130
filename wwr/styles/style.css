@@ -19,7 +19,7 @@ main section {
 }
 #background {
     height: 725px;
-    background-color: #0077b6;
+    background-color: #00b4d8;
 }
 body {
     background-color: #03045e;
@@ -32,12 +32,12 @@ nav a:hover {
     color: white;
 }
 .book {
-    background-color: #03045e;
+    background-color: #0077b6;
     text-decoration: none;
     color: white;
 }
 .join {
-    background-color: #0077b6;
+    background-color: #03045e;
     color: white;
     text-decoration: none;
 }
@@ -80,7 +80,8 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: #0077b6;
+    color: #03045e;
+    text-decoration: underline;
 }
 .logo {
     width: 80px;
@@ -94,6 +95,6 @@ footer a:hover {
 footer p {
         font-size: 1.2em;
 }
-footer p:hover {
+footer p a:hover {
     text-decoration: underline;
 }
