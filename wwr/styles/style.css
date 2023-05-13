@@ -32,21 +32,21 @@ nav a:hover {
     color: white;
 }
 .book {
-    background-color: #03045e;
+    background-color: #0077b6;
     text-decoration: none;
     color: white;
 }
 .join {
-    background-color: #0077b6;
+    background-color: #03045e;
     color: white;
     text-decoration: none;
 }
 .book:hover {
-    background-color: #0077b6;
+    background-color: #00b4d8;
     color: white;
 }
  .join:hover {
-    background-color: #03045e;
+    background-color: #00b4d8;
     color: white;
 }
 
