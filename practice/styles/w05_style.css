@@ -1,0 +1,50 @@
+body {
+    background-color: grey;
+}
+#background {
+    width: 100%;
+    height: 500px 
+}
+#desk {
+    float: left;
+    width: 150px
+    
+}
+#desk{
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 50%;
+    border-color:  rgb(66, 66, 70);
+    border-style: solid;
+    border-width: 15px;
+}
+#graphic {
+    float: left;
+    width: 150px   
+    
+}
+#graphic {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 50%;
+    border-color:  rgb(66, 66, 70);
+    border-style: solid;
+    border-width: 15px;
+
+}
+#person {
+    float: left;
+    width: 150px 
+}
+#person {
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 50%;
+    border-color:  rgb(66, 66, 70);
+    border-style: solid;
+    border-width: 15px;
+}
+
