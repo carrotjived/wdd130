@@ -99,8 +99,8 @@
         border: 10px solid #0077b6;
         
         box-shadow: 5px 5px 10px #00b4d8;
-        width: 425px;
-        height: 500px;
+        width: 325px;
+        height: 400px;
     }
 
     .container {
@@ -124,9 +124,14 @@
         
        
     }
+    
     .container:hover .overlay{
         opacity: 1;
         
+        
+    }
+    .container:hover {
+        transform: scale(1.2);
     }
     .container::before {
         content: "";
@@ -148,14 +153,14 @@
     }
     .price-info {
         position: absolute;
-        top: 40px;
-        left: 30%;
+        top: 20px;
+        left: 5%;
         color: white;
     }
     .price-info-1 {
         position: absolute;
         bottom: 40px;
-        left: 30%;
+        left: 5%;
         color: white;
         
 
@@ -163,14 +168,14 @@
     .price-salmon {
         position: absolute;
         top: 100px;
-        left: 35%;
+        left: 5%;
         color: white;
 
     }
     .price-desolation {
         position: absolute;
         top: 150px;
-        left: 40%;
+        left: 5%;
         color: white;
     }
 
@@ -184,7 +189,7 @@
         padding: 15px 30px;
         margin-top: 10px;
         border-radius: 5px;
-        margin-left: 30%;
+        margin-left: 10%;
 
 
     }
@@ -331,7 +336,7 @@
     ul {
         list-style: none;
         color: white;
-        margin-left: 50px;
+        margin-left: 1.25px;
     }
 
     footer p {
@@ -413,7 +418,10 @@
             display: block;
             height: auto;
         }
-
+        .head-title{
+            display: block;
+            height: auto;
+        }
         nav,
         footer {
             flex-direction: column;
@@ -439,9 +447,33 @@
         .home-title {
             font-size: 25px;
             color: #6f7364;
+
         }
-
-
+        .head-title {
+            font-size: 25px;
+            color: #6f7364;
+        
+        }
+        .card-grid{
+            display: block;
+            height: auto;
+        }
+        .first-card .overlay h4{
+            font-size: 12px;
+            margin-left: 30%;
+        }
+        .first-card .overlay h5 {
+            font-size: 15px;
+            margin-left: 4%;
+        }
+        .second-card .overlay h4 {
+            font-size: 15px;
+            
+        }
+        .third-card .overlay h3 {
+            font-size: 12px;
+            margin-left: 35%;
+        }
     }
 
     .rivers-card,
