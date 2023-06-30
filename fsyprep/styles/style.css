@@ -354,8 +354,8 @@ img {
     position: relative;
     cursor: pointer;
     border-radius: 20px;
-    margin-left: 100px;
-    
+    margin: 50px;
+
 
 }
 
@@ -382,11 +382,11 @@ img {
     -webkit-backdrop-filter: blur(25px);
     opacity: 0;
     transition: 0.5s ease;
-    color:#053d2c;
+    color: #053d2c;
     font-family: "Dancing Script";
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: larger;
-    
+
 }
 
 #standards {
