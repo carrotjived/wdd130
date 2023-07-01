@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Source+Serif+Pro&display=swap');
+/* #053d2c
+#a3b18a
+#1e894f
+#344e41
+
+"Dancing Script"
+"Source Serif Pro" */
+
+body {
+    background-color: #a3b18a;
+}
+
+#whole {
+    max-width: 1600px;
+    margin: auto 0;
+}
+
+/* HEADER */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #053d2c;
+    z-index: 999;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #a3b18a;
+    font-family: "Source Serif Pro";
+    word-spacing: 5px;
+    margin: 25px;
+
+
+}
+
+nav a:nth-child(3) {
+    background-color: transparent;
+    border-radius: 0px;
+    border-style: none;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #a3b18a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav a:hover::after {
+    width: 75%;
+}
+
+nav a:nth-child(3):hover::after {
+    width: 0%;
+}
+
+.wrapper {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #a3b18a;
+    margin: auto;
+
+}
+
+.wrapper img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: 10px;
+
+
+}
+
+.wrapper img:hover {
+    transform: scale(1.6);
+
+}
+
+/* MAIN */
+
+#intro {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+}
+
+
+
+#background {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+    width: 100%;
+
+
+}
+
+#background img {
+    width: 100%;
+    border-radius: 10px;
+
+
+}
+
+#intro-msg {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    color: #053d2c;
+    font-size: 25px;
+    word-spacing: 10px;
+    line-break: auto;
+    margin-left: 1em;
+}
+
+#intro-msg h1 {
+    font-family: "Dancing Script";
+    word-spacing: 10px;
+
+}
+
+#intro-msg h4 {
+    font-family: "Source Serif Pro";
+}
+
+#content {
+    margin-top: 75px;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: "Source Serif Pros";
+    font-size: 20px;
+    padding: 50px;
+    color: #053d2c;
+    margin-bottom: 100px;
+}
+
+.content-message em {
+    font-size: 25px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+.content-message {
+    text-align: center;
+}
+
+.content-image {
+    padding: 50px;
+}
+
+.content-image img {
+    border-radius: 50px;
+    width: 400px;
+
+}
+
+
+#links {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 56px;
+    margin-bottom: 100px;
+
+}
+
+.container {
+    height: 550px;
+    width: 450px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.slink {
+    height: 100%;
+    width: 100%;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.overlay h2 {
+    font-family: "Dancing Script";
+    color: #053d2c;
+    font-weight: 600;
+
+}
+
+#video {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Dancing Script";
+    color: #053d2c;
+}
+
+.vid {
+    border-radius: 50px;
+    width: 75%;
+    height: 75%;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 100px;
+    background-color: #053d2c;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    color: #a3b18a;
+    font-family: "Dancing Script";
+    align-items: center;
+    height: 80px;
+
+}
+
+.site-plan a {
+    text-decoration: none;
+    color: #a3b18a;
+}
+
+footer a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #a3b18a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+footer a:hover::after {
+    width: 75%;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.socialmedia a {
+    padding: 50px;
+}
+
+.socialmedia img {
+    border-radius: 50px;
+
+}

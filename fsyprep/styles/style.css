@@ -7,6 +7,14 @@
 "Dancing Script"
 "Source Serif Pro" */
 
+
+html {
+    max-width: 1600px;
+}
+
+main {
+    align-items: center;
+}
 body {
     background-color: #053d2c;
 }
