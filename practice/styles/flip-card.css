@@ -79,6 +79,8 @@
 
 .content {
   position: absolute;
+  top: 0;
+  bottom: 50%;
   
 }
 
@@ -90,10 +92,7 @@
   border-radius: 50px;
 
 }
-
-.flip-card-back h1,
-.flip-card-back p {
-  margin-top: 50px;
-
-
+.content h2{
+  margin-top: 25%;
 }
+
