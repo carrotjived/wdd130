@@ -5,6 +5,7 @@
     width: 300px;
     height: 200px;
     border: 1px solid #f1f1f1;
+    border-radius: 50px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -16,6 +17,7 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 50px;
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -30,21 +32,29 @@
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
     color: black;
+    border-radius: 50px;
   }
   
   /* Style the back side */
   .flip-card-back {
+    
     width: 300px;
     height: 300px;
     background-color: #053d2c;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 50px;
+    background-image: url(/practice/images/slytherin.jpg);
+    background-position: center;
+    font-family:'Times New Roman', Times, serif;
+    
     
 
   }
@@ -53,5 +63,12 @@
     object-fit: cover;
     width: 300px;
     height: 300px;
+    border-radius: 50px;
     
   }
+  .flip-card-back h1, .flip-card-back p{
+    margin-top: 50px;
+   
+
+  }
+
