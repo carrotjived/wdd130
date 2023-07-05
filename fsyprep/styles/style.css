@@ -16,10 +16,14 @@ body {
     margin: 0 auto;
 }
 
+
+
 /* HEADER */
+
+
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
     position: fixed;
@@ -28,6 +32,8 @@ nav {
     height: 80px;
     background-color: #053d2c;
     z-index: 999;
+    padding: 0 20px;
+    
 
 
 }
@@ -195,11 +201,13 @@ nav a:nth-child(3):hover::after {
     position: relative;
     cursor: pointer;
     border-radius: 20px;
+    
 }
 
 .slink {
     height: 100%;
     width: 100%;
+
 }
 
 .container:hover .overlay {
@@ -255,7 +263,7 @@ footer {
     color: #a3b18a;
     font-family: "Dancing Script";
     align-items: center;
-    height: 80px;
+    height: 100px;
 
 }
 
@@ -292,3 +300,378 @@ footer a:hover::after {
     border-radius: 50px;
 
 }
+
+/* STANDARDS PAGE */
+
+
+
+#first {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    color: #053d2c;
+    font-size: 25px;
+    word-spacing: 10px;
+    line-break: auto;
+    margin-left: 1em;
+
+}
+
+#first h1 {
+    font: 50px "Dancing Script";
+    word-spacing: 10px;
+
+
+}
+
+#first h4 {
+    font-family: "Source Serif Pro";
+}
+
+#to-bring {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.bring-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: "Dancing Script";
+    font-size: 20px;
+    padding: 50px;
+    /* border-radius: 50px; */
+    width: 750px;
+
+   
+}
+#gallery {
+   
+    width: 200vw;
+    display: flex;
+    flex-flow: column;
+    height: 75vmin;
+    gap: 5px;
+    /* border-radius: 50px; */
+   
+    
+
+}
+.card {
+    width: 100%;
+    height: 300px;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s;
+    
+    
+
+    
+
+}
+
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -150%;
+    color: #fff ;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+    
+}
+.card:hover .card-body {
+    right: 0;
+    
+}
+
+.card:hover {
+    flex: 15;
+    height: 100%;
+    
+}
+
+.tobring {
+    font-family: "Dancing Script";
+    color: #053d2c;
+    font-weight: 600;
+
+}
+
+#bigfive {
+    margin: 100px 0 100px 0;
+}
+
+.bigfive {
+    align-items: center;
+    text-align: center;
+    font: 30px "Source Serif Pro";
+    color: #053d2c;
+
+
+}
+
+.bigfive h2 {
+    
+    font-family: "Dancing Script";
+
+} 
+
+#b5list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.b5-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    width: 800px;
+
+}
+
+.b5-gallery {
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    height: 70vmin;
+    gap: 15px;
+   
+}
+
+.b5-card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s ease;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.b5-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.b5-card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -150%;
+    color: #fff;
+    position: absolute;
+    background: #1f3d4738;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    text-align: right;
+
+    
+    
+
+
+    
+}
+
+.b5-card-body p {
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.b5-card:hover .b5-card-body {
+    right: 0;
+    opacity: 1;
+}
+.b5-card:hover {
+flex: 15;
+width: 100%;
+
+
+
+}
+
+.drugs {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+}
+ 
+.bring-list {
+    font-family: "Dancing Script";
+    color: #053d2c;
+    font-weight: 600;
+}
+
+#dress-appearance {
+    width: 100%;
+    font: 30px "Source Serif Pro";
+    color: #053d2c;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+#dress-appearance h2 {
+    font-family: "Dancing Script";
+    
+    
+}
+
+.dress-appearance {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+.dress-list li {
+
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 2.5px;
+    
+}
+.dress-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* padding: 50px; */
+    width: 700px;
+    
+}
+.dress-gallery {
+    width: 550px;
+    height: 420px;
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+    flex-flow: row;
+
+
+}
+.dress-card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s ease;
+    text-align: center;
+    align-items: center;
+}
+
+.dress-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.dress-card:hover{
+    
+    flex: 60%;
+    height: 100%;
+}
+
+.add{
+    font: 25px "Source Serif Pro";
+    padding: 100px;
+}
+.add p {
+    color: #053d2c;
+}
+
+.other {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font: 20px "Source Serif Pro";
+
+}
+
+.list {
+    
+    text-align: left;
+    align-items: center;
+    
+}
+
+.list li{
+    list-style:disc;
+}
+.list li, .list h1{
+    color: #053d2c;
+}
+
+.list h1 {
+    font-family: "Dancing Script";
+   
+    text-align: center;
+}
+
+.otherimg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    
+    
+}
+
+.otherimg img {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border-radius: 100px;
+    object-fit: cover;
+    
+}
+
+
