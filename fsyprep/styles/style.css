@@ -33,7 +33,7 @@ nav {
     background-color: #053d2c;
     z-index: 999;
     padding: 0 20px;
-    
+
 
 
 }
@@ -181,6 +181,7 @@ nav a:nth-child(3):hover::after {
 .content-image img {
     border-radius: 50px;
     width: 400px;
+    object-fit: cover;
 
 }
 
@@ -195,13 +196,17 @@ nav a:nth-child(3):hover::after {
 }
 
 .container {
-    height: 550px;
+    height: 750px;
     width: 450px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     border-radius: 20px;
-    
+
+}
+
+.container img {
+    object-fit: cover;
 }
 
 .slink {
@@ -334,7 +339,7 @@ footer a:hover::after {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+
 }
 
 .bring-container {
@@ -344,37 +349,39 @@ footer a:hover::after {
     font-family: "Dancing Script";
     font-size: 20px;
     padding: 50px;
-    /* border-radius: 50px; */
+
     width: 750px;
 
-   
+
 }
+
 #gallery {
-   
+
     width: 200vw;
     display: flex;
     flex-flow: column;
     height: 75vmin;
     gap: 5px;
-    /* border-radius: 50px; */
-   
-    
+
+
+
 
 }
+
 .card {
     width: 100%;
     height: 300px;
-    /* border-radius: 20px; */
+
     overflow: hidden;
     position: relative;
     object-fit: cover;
     cursor: pointer;
     flex: 1;
     transition: 0.3s;
-    
-    
 
-    
+
+
+
 
 }
 
@@ -384,7 +391,7 @@ footer a:hover::after {
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    
+
 }
 
 .card-body {
@@ -392,7 +399,7 @@ footer a:hover::after {
     height: 100%;
     top: 0;
     right: -150%;
-    color: #fff ;
+    color: #fff;
     position: absolute;
     background: #1f3d4738;
     backdrop-filter: blur(5px);
@@ -402,17 +409,18 @@ footer a:hover::after {
     flex-direction: column;
     justify-content: center;
     transition: .5s;
-    
+
 }
+
 .card:hover .card-body {
     right: 0;
-    
+
 }
 
 .card:hover {
     flex: 15;
     height: 100%;
-    
+
 }
 
 .tobring {
@@ -436,16 +444,16 @@ footer a:hover::after {
 }
 
 .bigfive h2 {
-    
+
     font-family: "Dancing Script";
 
-} 
+}
 
 #b5list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+
 
 }
 
@@ -464,7 +472,7 @@ footer a:hover::after {
     flex-flow: row;
     height: 70vmin;
     gap: 15px;
-   
+
 }
 
 .b5-card {
@@ -478,7 +486,7 @@ footer a:hover::after {
     transition: 0.3s ease;
     text-align: center;
     align-items: center;
-    
+
 }
 
 .b5-card-img {
@@ -505,26 +513,28 @@ footer a:hover::after {
     opacity: 0;
     text-align: right;
 
-    
-    
 
 
-    
+
+
+
 }
 
 .b5-card-body p {
     font-family: "Source Serif Pro";
     font-size: 20px;
     font-weight: 500;
-    
+
 }
+
 .b5-card:hover .b5-card-body {
     right: 0;
     opacity: 1;
 }
+
 .b5-card:hover {
-flex: 15;
-width: 100%;
+    flex: 15;
+    width: 100%;
 
 
 
@@ -535,7 +545,7 @@ width: 100%;
     width: 100%;
     height: 100%;
 }
- 
+
 .bring-list {
     font-family: "Dancing Script";
     color: #053d2c;
@@ -549,12 +559,13 @@ width: 100%;
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+
 }
+
 #dress-appearance h2 {
     font-family: "Dancing Script";
-    
-    
+
+
 }
 
 .dress-appearance {
@@ -564,7 +575,7 @@ width: 100%;
     padding: 20px;
     gap: 50px;
     align-items: center;
-    
+
 }
 
 .dress-list li {
@@ -572,16 +583,18 @@ width: 100%;
     font-size: 20px;
     text-align: center;
     word-spacing: 2.5px;
-    
+
 }
+
 .dress-container {
     display: flex;
     text-align: center;
     align-items: center;
     /* padding: 50px; */
     width: 700px;
-    
+
 }
+
 .dress-gallery {
     width: 550px;
     height: 420px;
@@ -592,6 +605,7 @@ width: 100%;
 
 
 }
+
 .dress-card {
     width: 100%;
     height: 100%;
@@ -612,16 +626,17 @@ width: 100%;
     border-radius: 15px;
 }
 
-.dress-card:hover{
-    
+.dress-card:hover {
+
     flex: 60%;
     height: 100%;
 }
 
-.add{
+.add {
     font: 25px "Source Serif Pro";
     padding: 100px;
 }
+
 .add p {
     color: #053d2c;
 }
@@ -637,22 +652,24 @@ width: 100%;
 }
 
 .list {
-    
+
     text-align: left;
     align-items: center;
-    
+
 }
 
-.list li{
-    list-style:disc;
+.list li {
+    list-style: disc;
 }
-.list li, .list h1{
+
+.list li,
+.list h1 {
     color: #053d2c;
 }
 
 .list h1 {
     font-family: "Dancing Script";
-   
+
     text-align: center;
 }
 
@@ -661,8 +678,8 @@ width: 100%;
     height: 100%;
     overflow: hidden;
     object-fit: cover;
-    
-    
+
+
 }
 
 .otherimg img {
@@ -671,7 +688,322 @@ width: 100%;
     padding: 50px;
     border-radius: 100px;
     object-fit: cover;
+
+}
+
+/* FSY STAFF---------------------------------------------------------------------------- */
+#sdc {
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0 300px 0;
+
+}
+
+.sdc {
+
+    color: #053d2c;
+    font-family: "Source Serif Pro";
+    font-size: 35px;
+    margin-top: -50px;
+
+}
+
+.sdc h3 {
+    font-family: "Dancing Script";
+    font-size: 50px;
+}
+
+
+
+.sdc img {
+    width: 450px;
+    height: 450px;
+    border-radius: 55px;
+    object-fit: cover;
+
+
+}
+
+.sdc h4 {
+    margin-top: -50px;
+}
+
+
+#coordinators {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -100px;
+
+}
+
+.c-gallery {
+    display: flex;
+    width: 100vw;
+    height: 70vmin;
+    flex-flow: row;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.c-card {
+    background-color: transparent;
+    width: 450px;
+    height: 550px;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    perspective: 1000px;
+    object-fit: cover;
+}
+
+.c-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    border-radius: 25px;
+}
+  
+.c {
+
+    font-family: "Source Serif Pro";
+    color: #053d2c;
+    font-size: 25px;
+}
+
+
+.c-flip-card-front,
+.c-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+ 
+  backface-visibility: hidden;
+
+}
+
+.c-flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 25px;
+}
+
+.c-flip-card-back {
+
     
+    background-color: #053d2c;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+}
+.c-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+}
+.c-bg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.c-card:hover .c-flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.c-card-body {
+    position: absolute;
+    left: 0;
+    top: 70%;
+}
+  
+.c-card-body h3{
+    font-size: 50px;
+    color: white;
+    font-family: "Dancing Script";
+}
+.c-flip-card-front img {
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+
+.ac-gallery {
+    display: flex;
+    width: 100vw;
+    height: 70vmin;
+    flex-flow: row;
+    gap: 15px;
+
+}
+
+
+
+.ast-coordinators {
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    color: #053d2c;
+    font: 25px "Dancing Script";
+}
+
+.ac {
+    font-family: "Source Serif Pro";
+}
+
+.ac-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.ac-gallery {
+    display: flex;
+    width: 100vw;
+    height: 70vmin;
+    flex-flow: row;
+    gap: 15px;
+
+}
+
+.ac-card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s ease;
+    text-align: center;
+    align-items: center;
+    border-radius: 25px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    border-radius: 25px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 25px;
+}
+
+.flip-card-back {
+    background-color: #053d2c;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.bg img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.ac-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.ac-card-body {
+    position: absolute;
+    left: 0;
+    top: 70%;
+}
+
+.ac-card-body h3 {
+    font-size: 50px;
+    color: white;
+}
+
+.flip-card-front img {
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+.ac-card:nth-child(4) h3 {
+    color: #fff;
+}
+
+.ac-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.ac-card:hover .ac-card-body {
+    right: 0;
+    opacity: 1;
+}
+
+.ac-card:hover {
+    flex: 5;
+    width: 100%;
+}
+
+
+
+#counselors-first, #counselors-second{
+    margin: 100px 0 200px 0;
+    align-items: center;
+    text-align: center;
+    color: #053d2c;
+    font: 25px "Dancing Script";
 }
 
 
